@@ -21,7 +21,7 @@ interface SignInProps {
 
 const SignIn: React.FC<SignInProps> = ({ providers }) => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-6 bg-gray-100">
+    <div className="flex flex-col items-center justify-center min-h-screen py-6 bg-slate-800">
       <h1 className="text-3xl font-bold mb-6">Sign in</h1>
       <div className="space-y-4">
         {Object.values(providers).map((provider) => (
