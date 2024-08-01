@@ -13,8 +13,8 @@ export default NextAuth({
       clientSecret: "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",
     }),
     FacebookProvider({
-      clientId: "1033847384816565",
-      clientSecret: "25b831ddc224d7087b4bf05729a48aab",
+      clientId: "861360712077389",
+      clientSecret: "1a5359086703929112e39381ef844014",
     }),
     GitHubProvider({
       clientId: "Ov23liLDmE8RDUnS1coC",
