@@ -7,6 +7,7 @@ import FacebookProvider from 'next-auth/providers/facebook';
 import LinkedInProvider from 'next-auth/providers/linkedin';
 import SpotifyProvider from 'next-auth/providers/spotify';
 import GitHubProvider from 'next-auth/providers/github';
+import TwitterProvider from 'next-auth/providers/twitter';
 
 export default NextAuth({
   providers: [
@@ -30,6 +31,10 @@ export default NextAuth({
       clientId: process.env.LINKEDIN_CLIENT_ID!,
       clientSecret: process.env.LINKEDIN_CLIENT_SECRET!,
     }),
+    TwitterProvider({
+      clientId: process.env.TWITTER_CLIENT_ID!,
+      clientSecret: process.env.TWITTER_CLIENT_SECRET!,
+    })
   ],
   pages: {
     signIn: '/auth/signin',
